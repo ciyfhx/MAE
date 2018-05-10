@@ -44,7 +44,7 @@
 
 @interface Pencil : Stationery
 
-- (void) initVar: (NSString*) newID setColour: (NSString*) newColour setQuantity: (NSInteger) newQuantity setPrice: (CGFloat) newPrice;
+- (void) initVar;
 
 @end
 
@@ -101,11 +101,11 @@
 
 @implementation Pencil
 
-- (void) initVar: (NSString*) newID setColour: (NSString*) newColour setQuantity: (NSInteger) newQuantity setPrice: (CGFloat) newPrice{
-    ID = newID;
-    colour = newColour;
-    quantity = newQuantity;
-    price = newPrice;
+- (void) initVar {
+    ID = @"B001";
+    colour = @"yellow";
+    quantity = 40;
+    price = 1.20;
 }
 
 @end

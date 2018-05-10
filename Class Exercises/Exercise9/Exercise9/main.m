@@ -24,7 +24,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@"");
         
         Pencil* yellowPencil = [[Pencil alloc] init];
-        [yellowPencil initVar: @"B001" setColour: @"yellow" setQuantity: 40 setPrice: 1.20];
+        [yellowPencil initVar];
         
         NSLog(@"The Pencil's ID is %@.", [yellowPencil ID]);
         NSLog(@"The Pencil's colour is %@.", [yellowPencil colour]);
