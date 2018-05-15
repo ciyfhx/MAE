@@ -48,9 +48,6 @@
 
 @implementation Fruit
 
-
-
-
 - (void) setProductCode: (NSInteger) newProductCode {
     productCode = newProductCode;
 }
