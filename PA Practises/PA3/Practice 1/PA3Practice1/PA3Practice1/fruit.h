@@ -99,7 +99,7 @@
     NSLog(@">The apple brand is %@", brand);
     NSLog(@">The apple unit price is $%@", unitPrice);
     NSLog(@">The apple tax is %li%%", tax);
-    NSLog(@">The apple selling price is $%.2f", [[self calSellPrice] floatValue]);
+    NSLog(@">The apple selling price is $%.2f", round([[self calSellPrice] floatValue] * 100.0f) / 100.0f);
 }
 
 @end

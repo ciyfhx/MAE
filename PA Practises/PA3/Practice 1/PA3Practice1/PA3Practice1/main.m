@@ -27,7 +27,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@">The orange brand is %@", [nlOrange brand]);
         NSLog(@">The orange unit price is $%@", [nlOrange unitPrice]);
         NSLog(@">The orange tax is %li%%", [nlOrange tax]);
-        NSLog(@">The orange selling price is $%.2f", [[nlOrange calSellPrice] floatValue]);
+        NSLog(@">The orange selling price is $%.2f", round([[nlOrange calSellPrice] floatValue] * 100.0f) / 100.0f);
         
         
     }
