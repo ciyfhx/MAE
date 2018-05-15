@@ -74,6 +74,29 @@
 
 @end
 
+@interface CombatBoot : Boot {
+    NSString* serviceType;
+}
+
+- (NSString*) serviceType;
+
+- (void) setServiceType: (NSString*) newServiceType;
+
+@end
+
+@implementation CombatBoot
+
+- (NSString*) serviceType {
+    return serviceType;
+}
+
+- (void) setServiceType:(NSString *)newServiceType {
+    serviceType = newServiceType;
+}
+
+@end
+
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         Boot* myBoot = [[Boot alloc] init];
@@ -88,6 +111,24 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Length: %@cm", [myBoot length]);
         NSLog(@"Material: %@", [myBoot material]);
         NSLog(@"Height: %@cm", [myBoot height]);
+        
+        NSLog(@"\n");
+        
+        CombatBoot* NduBoots = [[CombatBoot alloc] init];
+        
+        [NduBoots setColour: @"Black"];
+        [NduBoots setLength: [NSNumber numberWithInt: 35]];
+        [NduBoots setMaterial: @"Leather"];
+        [NduBoots setHeight: [NSNumber numberWithInt: 45]];
+        [NduBoots setServiceType: @"Navy"];
+        
+        NSLog(@"Colour: %@", [NduBoots colour]);
+        NSLog(@"Length: %@cm", [NduBoots length]);
+        NSLog(@"Material: %@", [NduBoots material]);
+        NSLog(@"Height: %@cm", [NduBoots height]);
+        NSLog(@"Service Type: %@", [NduBoots serviceType]);
+        
+        
         
         
     }
