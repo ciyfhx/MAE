@@ -2,8 +2,8 @@
 //  fruit.h
 //  PA3Practice1
 //
-//  Created by Student1 on 15/5/18.
-//  Copyright © 2018 ciyfhx. All rights reserved.
+//  Created by Zi Heng on 15/5/18.
+//  Copyright © 2018 Zi Heng. All rights reserved.
 //
 
 #ifndef fruit_h
