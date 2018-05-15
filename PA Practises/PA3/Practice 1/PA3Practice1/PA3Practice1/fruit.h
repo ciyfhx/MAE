@@ -49,14 +49,6 @@
 @implementation Fruit
 
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        productCode = arc4random_uniform(100);
-    }
-    return self;
-}
 
 
 - (void) setProductCode: (NSInteger) newProductCode {
@@ -94,6 +86,16 @@
 
 @implementation Apple
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        productCode = arc4random_uniform(50) + 1;
+    }
+    return self;
+}
+
+
 - (void) showVar {
     NSLog(@">The apple product code is %li", productCode);
     NSLog(@">The apple brand is %@", brand);
@@ -105,6 +107,15 @@
 @end
 
 @implementation Orange
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        productCode = arc4random_uniform(50) + 51;
+    }
+    return self;
+}
 
 - (void) setVar {
     brand = @"Navel";
