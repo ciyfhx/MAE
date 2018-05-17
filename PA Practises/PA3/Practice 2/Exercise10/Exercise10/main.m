@@ -1,6 +1,6 @@
 //
 //  main.m
-//  Exercise10
+//  Device Management
 //
 //  Created by Zi Heng on 17/5/18.
 //  Copyright © 2018 Zi Heng. All rights reserved.
