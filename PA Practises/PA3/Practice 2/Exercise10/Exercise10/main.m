@@ -26,10 +26,10 @@ int main(int argc, const char * argv[]) {
         Notebook* notebook1 = [[Notebook alloc] init];
         [notebook1 setAllvars];
         
-        NSLog(@">>> The Notebook Device ID is %li", [notebook1 ID]);
-        NSLog(@">>> The Notebook Brand is %@", [notebook1 brand]);
-        NSLog(@">>> The Notebook Model is %@", [notebook1 model]);
-        NSLog(@">>> The Notebook price is $%.2f", [notebook1 price]);
+        NSLog(@">>> The Notebook Device ID is %li", [notebook1 getID]);
+        NSLog(@">>> The Notebook Brand is %@", [notebook1 getBrand]);
+        NSLog(@">>> The Notebook Model is %@", [notebook1 getModel]);
+        NSLog(@">>> The Notebook price is $%.2f", [notebook1 getPrice]);
         NSLog(@">>> The Notebook depreciated cost is $%.2f", [notebook1 showDepCost]);
         
         

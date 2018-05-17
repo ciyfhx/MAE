@@ -18,10 +18,10 @@
     CGFloat price;
 }
 
-- (NSInteger) ID;
-- (NSString*) brand;
-- (NSString*) model;
-- (CGFloat) price;
+- (NSInteger) getID;
+- (NSString*) getBrand;
+- (NSString*) getModel;
+- (CGFloat) getPrice;
 
 - (void) setID: (NSInteger) newID;
 - (void) setBrand: (NSString*) newBrand;
@@ -46,16 +46,16 @@
 
 @implementation Device
 
-- (NSInteger) ID {
+- (NSInteger) getID {
     return ID;
 }
-- (NSString*) brand {
+- (NSString*) getBrand {
     return brand;
 }
-- (NSString*) model {
+- (NSString*) getModel {
     return model;
 }
-- (CGFloat) price {
+- (CGFloat) getPrice {
     return price;
 }
 
