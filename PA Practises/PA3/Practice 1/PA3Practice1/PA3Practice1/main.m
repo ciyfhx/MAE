@@ -13,6 +13,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        
         Apple* fjApple = [[Apple alloc] init];
         [fjApple setBrand: @"Fuji"];
         [fjApple setUnitPrice: [NSNumber numberWithFloat:.30f]];
