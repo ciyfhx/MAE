@@ -30,7 +30,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@">>> The Notebook Brand is %@", [notebook1 brand]);
         NSLog(@">>> The Notebook Model is %@", [notebook1 model]);
         NSLog(@">>> The Notebook price is $%.2f", [notebook1 price]);
-        NSLog(@">>> The Notebook Device ID is $%.2f", [notebook1 showDepCost]);
+        NSLog(@">>> The Notebook depreciated cost is $%.2f", [notebook1 showDepCost]);
         
         
     }

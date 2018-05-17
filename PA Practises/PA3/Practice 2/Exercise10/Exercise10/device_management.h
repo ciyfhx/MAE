@@ -85,7 +85,7 @@
     NSLog(@">>> The Desktop Brand is %@", brand);
     NSLog(@">>> The Desktop Model is %@", model);
     NSLog(@">>> The Desktop price is $%.2f", price);
-    NSLog(@">>> The Desktop Device ID is $%.2f", [self showDepCost]);
+    NSLog(@">>> The Desktop depreciated cost is $%.2f", [self showDepCost]);
 }
 
 @end
