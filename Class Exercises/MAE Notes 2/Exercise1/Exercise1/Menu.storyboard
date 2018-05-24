@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rna-LE-qtN">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MenuVC-->
+        <scene sceneID="T0s-HT-SPy">
+            <objects>
+                <viewController id="Rna-LE-qtN" customClass="MenuVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XR7-P2-bef">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlD-rA-XQq">
+                                <rect key="frame" x="62" y="189" width="289" height="41"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <state key="normal" title="Marks">
+                                    <color key="titleColor" red="0.99214668186716426" green="1" blue="0.99416173034872124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bkr-BE-mS9" kind="show" id="m9D-5H-Lea"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eITSytem Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVR-qf-7uD">
+                                <rect key="frame" x="115" y="103" width="183" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.96460649028510803" green="1" blue="0.97358416437515638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flr-dt-NZH">
+                                <rect key="frame" x="62" y="260" width="289" height="41"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <state key="normal" title="Modules">
+                                    <color key="titleColor" red="0.99214668189999999" green="1" blue="0.99416173029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9pw-SQ-bTr" kind="show" id="Plb-vq-Z4Z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.69570728207683796" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hlD-rA-XQq" firstAttribute="leading" secondItem="ifE-RF-zVl" secondAttribute="leading" constant="62" id="3Yi-h1-rfB"/>
+                            <constraint firstItem="wVR-qf-7uD" firstAttribute="top" secondItem="ifE-RF-zVl" secondAttribute="top" constant="83" id="Cv1-0K-JPf"/>
+                            <constraint firstItem="hlD-rA-XQq" firstAttribute="top" secondItem="wVR-qf-7uD" secondAttribute="bottom" constant="56" id="ReL-HV-jET"/>
+                            <constraint firstItem="hlD-rA-XQq" firstAttribute="trailing" secondItem="flr-dt-NZH" secondAttribute="trailing" id="Uus-5i-c1C"/>
+                            <constraint firstItem="flr-dt-NZH" firstAttribute="top" secondItem="hlD-rA-XQq" secondAttribute="bottom" constant="30" id="esg-fu-jqx"/>
+                            <constraint firstItem="wVR-qf-7uD" firstAttribute="centerX" secondItem="hlD-rA-XQq" secondAttribute="centerX" id="kLx-h4-zHw"/>
+                            <constraint firstItem="hlD-rA-XQq" firstAttribute="leading" secondItem="flr-dt-NZH" secondAttribute="leading" id="obb-RU-Xz9"/>
+                            <constraint firstItem="wVR-qf-7uD" firstAttribute="centerX" secondItem="XR7-P2-bef" secondAttribute="centerX" id="ugE-tL-h8M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ifE-RF-zVl"/>
+                    </view>
+                    <connections>
+                        <outlet property="MarksBtn" destination="hlD-rA-XQq" id="2BY-cc-ReQ"/>
+                        <outlet property="ModuleBtn" destination="flr-dt-NZH" id="lvd-F5-GfV"/>
+                        <outlet property="TitleLbl" destination="wVR-qf-7uD" id="p0c-sW-I5f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t4g-hM-gDW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="246.37681159420291" y="-205.43478260869566"/>
+        </scene>
+        <!--Marks-->
+        <scene sceneID="IX6-A1-mO0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Marks" id="bkr-BE-mS9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6M-FB-qOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922" y="-376"/>
+        </scene>
+        <!--Module-->
+        <scene sceneID="fob-yv-ndS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Module" id="9pw-SQ-bTr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O8x-4h-olt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="925" y="-232"/>
+        </scene>
+    </scenes>
+</document>
