@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC6C5D5920B576E8009445CC /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6C5D5820B576E8009445CC /* Menu.storyboard */; };
 		AC6C5D5C20B6F5E9009445CC /* MenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6C5D5B20B6F5E9009445CC /* MenuVC.m */; };
+		E7013C1F20BBCE960032DD51 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E7013C1E20BBCE960032DD51 /* LoginVC.m */; };
+		E7013C2220BBD00D0032DD51 /* LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = E7013C2120BBD00D0032DD51 /* LoginService.m */; };
+		E7013C2520BBD38B0032DD51 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7013C2420BBD38B0032DD51 /* Menu.storyboard */; };
+		E7013C2720BBDB700032DD51 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7013C2620BBDB700032DD51 /* Login.storyboard */; };
 		E74BACC520B652EF00B20AAD /* Module.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E74BACC420B652EF00B20AAD /* Module.storyboard */; };
 		E74BACC820B653AE00B20AAD /* ModuleTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BACC720B653AE00B20AAD /* ModuleTVC.m */; };
 		E74BACCB20B659DF00B20AAD /* ModuleDetailTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BACCA20B659DF00B20AAD /* ModuleDetailTVC.m */; };
@@ -43,9 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AC6C5D5820B576E8009445CC /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		AC6C5D5A20B6F5E9009445CC /* MenuVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuVC.h; sourceTree = "<group>"; };
 		AC6C5D5B20B6F5E9009445CC /* MenuVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuVC.m; sourceTree = "<group>"; };
+		E7013C1D20BBCE960032DD51 /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		E7013C1E20BBCE960032DD51 /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		E7013C2020BBD00D0032DD51 /* LoginService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginService.h; sourceTree = "<group>"; };
+		E7013C2120BBD00D0032DD51 /* LoginService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginService.m; sourceTree = "<group>"; };
+		E7013C2420BBD38B0032DD51 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		E7013C2620BBDB700032DD51 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		E74BACC420B652EF00B20AAD /* Module.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Module.storyboard; sourceTree = "<group>"; };
 		E74BACC620B653AE00B20AAD /* ModuleTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleTVC.h; sourceTree = "<group>"; };
 		E74BACC720B653AE00B20AAD /* ModuleTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleTVC.m; sourceTree = "<group>"; };
@@ -99,6 +107,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E7013C2320BBD01A0032DD51 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				E7013C2420BBD38B0032DD51 /* Menu.storyboard */,
+				E7013C1D20BBCE960032DD51 /* LoginVC.h */,
+				E7013C1E20BBCE960032DD51 /* LoginVC.m */,
+				E7013C2020BBD00D0032DD51 /* LoginService.h */,
+				E7013C2120BBD00D0032DD51 /* LoginService.m */,
+				AC6C5D5A20B6F5E9009445CC /* MenuVC.h */,
+				AC6C5D5B20B6F5E9009445CC /* MenuVC.m */,
+				E7013C2620BBDB700032DD51 /* Login.storyboard */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 		E74BACC220B6510000B20AAD /* Marks */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +171,7 @@
 		E7BCB59A20B3E03C00478C5B /* Exercise1 */ = {
 			isa = PBXGroup;
 			children = (
+				E7013C2320BBD01A0032DD51 /* Menu */,
 				E74BACC320B652C400B20AAD /* Modules Structure */,
 				E74BACC220B6510000B20AAD /* Marks */,
 				E7BCB59B20B3E03C00478C5B /* AppDelegate.h */,
@@ -157,9 +181,6 @@
 				E7BCB5A620B3E03C00478C5B /* LaunchScreen.storyboard */,
 				E7BCB5A920B3E03C00478C5B /* Info.plist */,
 				E7BCB5AA20B3E03C00478C5B /* main.m */,
-				AC6C5D5820B576E8009445CC /* Menu.storyboard */,
-				AC6C5D5A20B6F5E9009445CC /* MenuVC.h */,
-				AC6C5D5B20B6F5E9009445CC /* MenuVC.m */,
 			);
 			path = Exercise1;
 			sourceTree = "<group>";
@@ -290,8 +311,9 @@
 			files = (
 				E7BCB5A820B3E03C00478C5B /* LaunchScreen.storyboard in Resources */,
 				E74BACC520B652EF00B20AAD /* Module.storyboard in Resources */,
+				E7013C2720BBDB700032DD51 /* Login.storyboard in Resources */,
 				E7BCB5A520B3E03C00478C5B /* Assets.xcassets in Resources */,
-				AC6C5D5920B576E8009445CC /* Menu.storyboard in Resources */,
+				E7013C2520BBD38B0032DD51 /* Menu.storyboard in Resources */,
 				E7BCB5A320B3E03C00478C5B /* Marks.storyboard in Resources */,
 				E7BCB5D220B3E70A00478C5B /* bg2.png in Resources */,
 			);
@@ -320,10 +342,12 @@
 			files = (
 				E74BACCB20B659DF00B20AAD /* ModuleDetailTVC.m in Sources */,
 				AC6C5D5C20B6F5E9009445CC /* MenuVC.m in Sources */,
+				E7013C1F20BBCE960032DD51 /* LoginVC.m in Sources */,
 				E7BCB5D520B3F26C00478C5B /* Marks.m in Sources */,
 				E7BCB5A020B3E03C00478C5B /* AssessmentsVC.m in Sources */,
 				E7BCB5AB20B3E03C00478C5B /* main.m in Sources */,
 				E74BACCE20B65AB000B20AAD /* ModuleDetail.m in Sources */,
+				E7013C2220BBD00D0032DD51 /* LoginService.m in Sources */,
 				E7BCB59D20B3E03C00478C5B /* AppDelegate.m in Sources */,
 				E74BACC820B653AE00B20AAD /* ModuleTVC.m in Sources */,
 			);
@@ -414,6 +438,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 657XNP8S5V;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -471,6 +496,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 657XNP8S5V;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
