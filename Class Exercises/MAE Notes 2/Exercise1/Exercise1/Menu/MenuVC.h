@@ -12,5 +12,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *TitleLbl;
 @property (weak, nonatomic) IBOutlet UIButton *MarksBtn;
 @property (weak, nonatomic) IBOutlet UIButton *ModuleBtn;
+@property (weak, nonatomic) IBOutlet UIButton *iStudentBtn;
 
 @end

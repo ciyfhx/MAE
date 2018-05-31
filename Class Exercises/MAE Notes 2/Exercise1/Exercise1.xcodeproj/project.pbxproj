@@ -16,6 +16,8 @@
 		E74BACC820B653AE00B20AAD /* ModuleTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BACC720B653AE00B20AAD /* ModuleTVC.m */; };
 		E74BACCB20B659DF00B20AAD /* ModuleDetailTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BACCA20B659DF00B20AAD /* ModuleDetailTVC.m */; };
 		E74BACCE20B65AB000B20AAD /* ModuleDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BACCD20B65AB000B20AAD /* ModuleDetail.m */; };
+		E76B8E3C20BF8AF200B9C973 /* WebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E76B8E3B20BF8AF200B9C973 /* WebVC.m */; };
+		E76B8E3F20BF8DA300B9C973 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E76B8E3E20BF8DA300B9C973 /* WebKit.framework */; };
 		E7BCB59D20B3E03C00478C5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BCB59C20B3E03C00478C5B /* AppDelegate.m */; };
 		E7BCB5A020B3E03C00478C5B /* AssessmentsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BCB59F20B3E03C00478C5B /* AssessmentsVC.m */; };
 		E7BCB5A320B3E03C00478C5B /* Marks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7BCB5A120B3E03C00478C5B /* Marks.storyboard */; };
@@ -61,6 +63,9 @@
 		E74BACCA20B659DF00B20AAD /* ModuleDetailTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleDetailTVC.m; sourceTree = "<group>"; };
 		E74BACCC20B65AB000B20AAD /* ModuleDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleDetail.h; sourceTree = "<group>"; };
 		E74BACCD20B65AB000B20AAD /* ModuleDetail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleDetail.m; sourceTree = "<group>"; };
+		E76B8E3A20BF8AF200B9C973 /* WebVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebVC.h; sourceTree = "<group>"; };
+		E76B8E3B20BF8AF200B9C973 /* WebVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebVC.m; sourceTree = "<group>"; };
+		E76B8E3E20BF8DA300B9C973 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		E7BCB59820B3E03C00478C5B /* Exercise1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercise1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BCB59B20B3E03C00478C5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E7BCB59C20B3E03C00478C5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76B8E3F20BF8DA300B9C973 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +124,8 @@
 				AC6C5D5A20B6F5E9009445CC /* MenuVC.h */,
 				AC6C5D5B20B6F5E9009445CC /* MenuVC.m */,
 				E7013C2620BBDB700032DD51 /* Login.storyboard */,
+				E76B8E3A20BF8AF200B9C973 /* WebVC.h */,
+				E76B8E3B20BF8AF200B9C973 /* WebVC.m */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -148,6 +156,14 @@
 			path = "Modules Structure";
 			sourceTree = "<group>";
 		};
+		E76B8E3D20BF8DA200B9C973 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E76B8E3E20BF8DA300B9C973 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E7BCB58F20B3E03C00478C5B = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +171,7 @@
 				E7BCB5B320B3E03C00478C5B /* Exercise1Tests */,
 				E7BCB5BE20B3E03C00478C5B /* Exercise1UITests */,
 				E7BCB59920B3E03C00478C5B /* Products */,
+				E76B8E3D20BF8DA200B9C973 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -342,6 +359,7 @@
 			files = (
 				E74BACCB20B659DF00B20AAD /* ModuleDetailTVC.m in Sources */,
 				AC6C5D5C20B6F5E9009445CC /* MenuVC.m in Sources */,
+				E76B8E3C20BF8AF200B9C973 /* WebVC.m in Sources */,
 				E7013C1F20BBCE960032DD51 /* LoginVC.m in Sources */,
 				E7BCB5D520B3F26C00478C5B /* Marks.m in Sources */,
 				E7BCB5A020B3E03C00478C5B /* AssessmentsVC.m in Sources */,

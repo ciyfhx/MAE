@@ -36,6 +36,12 @@
          self.ModuleBtn.frame = orginRectModule;
     } completion:nil];
     
+    CGRect orginIStudentBtn = self.iStudentBtn.frame;
+    self.iStudentBtn.frame = CGRectMake(0 - orginIStudentBtn.size.width, orginIStudentBtn.origin.y, orginIStudentBtn.size.width, orginIStudentBtn.size.height);
+    [UIView animateWithDuration:.5f delay:.6f options:UIViewAnimationOptionCurveEaseIn animations:^{
+        self.iStudentBtn.frame = orginIStudentBtn;
+    } completion:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning {

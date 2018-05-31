@@ -22,7 +22,7 @@
                                 <rect key="frame" x="62" y="233" width="289" height="41"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
-                                <state key="normal" title="Marks">
+                                <state key="normal" title="Assessment Calculation">
                                     <color key="titleColor" red="0.99214668186716426" green="1" blue="0.99416173034872124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -39,22 +39,36 @@
                                 <rect key="frame" x="62" y="304" width="289" height="41"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
-                                <state key="normal" title="Modules">
+                                <state key="normal" title="Course Structure">
                                     <color key="titleColor" red="0.99214668189999999" green="1" blue="0.99416173029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="9pw-SQ-bTr" kind="show" id="Plb-vq-Z4Z"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdg-Vh-LTG">
+                                <rect key="frame" x="62" y="375" width="289" height="41"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <state key="normal" title="iStudent">
+                                    <color key="titleColor" red="0.99214668189999999" green="1" blue="0.99416173029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="CHi-lM-Btt" kind="show" id="leZ-NW-ztu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.69570728207683796" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="hlD-rA-XQq" firstAttribute="leading" secondItem="ifE-RF-zVl" secondAttribute="leading" constant="62" id="3Yi-h1-rfB"/>
+                            <constraint firstItem="ifE-RF-zVl" firstAttribute="trailing" secondItem="kdg-Vh-LTG" secondAttribute="trailing" constant="63" id="3wN-D0-6x2"/>
                             <constraint firstItem="wVR-qf-7uD" firstAttribute="top" secondItem="ifE-RF-zVl" secondAttribute="top" constant="83" id="Cv1-0K-JPf"/>
                             <constraint firstItem="hlD-rA-XQq" firstAttribute="top" secondItem="wVR-qf-7uD" secondAttribute="bottom" constant="56" id="ReL-HV-jET"/>
                             <constraint firstItem="hlD-rA-XQq" firstAttribute="trailing" secondItem="flr-dt-NZH" secondAttribute="trailing" id="Uus-5i-c1C"/>
+                            <constraint firstItem="kdg-Vh-LTG" firstAttribute="leading" secondItem="ifE-RF-zVl" secondAttribute="leading" constant="62" id="VKk-MX-jON"/>
                             <constraint firstItem="flr-dt-NZH" firstAttribute="top" secondItem="hlD-rA-XQq" secondAttribute="bottom" constant="30" id="esg-fu-jqx"/>
                             <constraint firstItem="wVR-qf-7uD" firstAttribute="centerX" secondItem="hlD-rA-XQq" secondAttribute="centerX" id="kLx-h4-zHw"/>
+                            <constraint firstItem="kdg-Vh-LTG" firstAttribute="top" secondItem="flr-dt-NZH" secondAttribute="bottom" constant="30" id="ltO-KB-78O"/>
                             <constraint firstItem="hlD-rA-XQq" firstAttribute="leading" secondItem="flr-dt-NZH" secondAttribute="leading" id="obb-RU-Xz9"/>
                             <constraint firstItem="wVR-qf-7uD" firstAttribute="centerX" secondItem="XR7-P2-bef" secondAttribute="centerX" id="ugE-tL-h8M"/>
                         </constraints>
@@ -71,6 +85,7 @@
                         <outlet property="MarksBtn" destination="hlD-rA-XQq" id="2BY-cc-ReQ"/>
                         <outlet property="ModuleBtn" destination="flr-dt-NZH" id="lvd-F5-GfV"/>
                         <outlet property="TitleLbl" destination="wVR-qf-7uD" id="p0c-sW-I5f"/>
+                        <outlet property="iStudentBtn" destination="kdg-Vh-LTG" id="KJn-vN-LiF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t4g-hM-gDW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -100,6 +115,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O8x-4h-olt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2902.1739130434785" y="-227.44565217391306"/>
+        </scene>
+        <!--WebVC-->
+        <scene sceneID="FCA-Yn-w39">
+            <objects>
+                <viewController id="CHi-lM-Btt" customClass="WebVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mOD-Vn-Gie">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CMK-T0-4EK">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dGk-rb-WxM"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="CMK-T0-4EK" id="HKH-VI-rJ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FGF-WW-0HC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3437.68115942029" y="-116.57608695652175"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZD3-fv-Mjt">
